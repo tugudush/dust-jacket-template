@@ -127,8 +127,10 @@ $.fn.get_header_image_dimension = function() {
   
   img.src = 'images/banner.png';
   
-  $header_image_width = img.onload('width');
-  $header_image_height = img.onload('height');
+  //$header_image_width = img.onload('width');
+  //$header_image_height = img.onload('height');
+  $header_image_width = 1600;
+  $header_image_height = 623;
   
   console.log('header image width: '+$header_image_width);
   console.log('header image height: '+$header_image_height);
