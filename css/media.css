@@ -3,6 +3,14 @@
   .wrap {
     
   }
+  
+  #footer-credits {
+    float: left;
+  }
+  
+  #footer-info {
+    float: right;
+  }
 } /* end of @media (min-width: 768px) */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -30,8 +38,8 @@
     max-width: 960px;
   }  
   
-  #banner .text1,
-  #banner .text1b {
+  #header .text1,
+  #header .text1b {
     color: #333333;
   }
 } /* end of @media (max-width: 1024px) */
@@ -97,5 +105,10 @@
   
   #search-submit {
     width: 25%;
+  }
+  
+  #header .text1 {
+    font-size: 14px;
+    font-size: 1.4rem;
   }
 } /* end of @media (max-width: 480px) */
