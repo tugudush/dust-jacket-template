@@ -115,10 +115,10 @@ $.fn.get_header_image_dimension = function() {
   img.onload = function(dimension) {    
     switch(dimension) {
       case 'width':
-        return this.width;
+        return this.naturalWidth;
         break;
       case 'height':
-        return this.height;
+        return this.naturalHeight;
         break;
       default:
         return this.width+' x '+this.height;
