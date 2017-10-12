@@ -1,4 +1,4 @@
-<div id="banner">
+<header id="header">
   <div class="wrap">
     <div id="top-bar" class="clearfix">
 
@@ -39,4 +39,4 @@
       </p>
 
   </div><!--/.wrap-->
-</div><!--/banner-->
+</header><!--/header-->
