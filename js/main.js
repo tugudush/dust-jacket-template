@@ -138,6 +138,6 @@ $.fn.get_header_image_dimension = function() {
 } // end of $.fn.get_header_image_dimension = function()
 
 $.fn.resize_header = function() {
-  var adjusted_header_height = ($viewport_width * $header_image_height) / $header_image_width;
-  $('#header').css('height', adjusted_header_height);
+  var adjusted_header_height = ($viewport_width * $header_image_height) / $header_image_width;  
+  $('#header').css('min-height', adjusted_header_height);
 } // end of $.fn.resize_header = function()
