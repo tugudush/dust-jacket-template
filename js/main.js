@@ -115,10 +115,10 @@ $.fn.get_header_image_dimension = function() {
   img.onload = function(dimension) {    
     switch(dimension) {
       case 'width':
-        return this.width;
+        return this.naturalWidth;
         break;
       case 'height':
-        return this.height;
+        return this.naturalHeight;
         break;
       default:
         return this.width+' x '+this.height;
@@ -127,8 +127,10 @@ $.fn.get_header_image_dimension = function() {
   
   img.src = 'images/banner.png';
   
-  $header_image_width = img.onload('width');
-  $header_image_height = img.onload('height');
+  //$header_image_width = img.onload('width');
+  //$header_image_height = img.onload('height');
+  $header_image_width = 1600;
+  $header_image_height = 623;
   
   console.log('header image width: '+$header_image_width);
   console.log('header image height: '+$header_image_height);
@@ -136,6 +138,6 @@ $.fn.get_header_image_dimension = function() {
 } // end of $.fn.get_header_image_dimension = function()
 
 $.fn.resize_header = function() {
-  var adjusted_header_height = ($viewport_width * $header_image_height) / $header_image_width;
-  $('#header').css('height', adjusted_header_height);
+  var adjusted_header_height = ($viewport_width * $header_image_height) / $header_image_width;  
+  $('#header').css('min-height', adjusted_header_height);
 } // end of $.fn.resize_header = function()

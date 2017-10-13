@@ -13,7 +13,7 @@
 <script src="/js/holder.js"></script>
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 <script src="/js/imagesloaded.pkgd.js"></script>
-<script src="/js/main.js"></script>
+<script src="/js/main.js?v=0.0.2"></script>
 <!-- <script src="/js/npm.js"></script> -->
 <script src="/js/skrollr.js"></script>
 <!-- endinject -->
