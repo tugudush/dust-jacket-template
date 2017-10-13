@@ -93,6 +93,7 @@ p {
   max-width: 835px;
 }
 
+/* original menu */
 #main-nav-wrap {
   margin-top: 30px;
 }
@@ -124,6 +125,78 @@ p {
   padding: 0 25px;
   color: #ffffff;
 }
+
+/* end of original menu */
+
+/* revised menu */
+
+#main-menu {
+  margin-top: 50px;
+}
+
+#page-home #main-menu {
+  
+}
+
+#main-menu ul {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+}
+
+#main-menu ul:after {    
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#main-menu ul li {
+  display: block;
+  float: left;
+}
+
+#main-menu ul li:first-child {
+  margin-left: 0;
+}
+
+#main-menu ul li a {
+  display: block;
+  overflow: hidden;
+  width: 110px;
+  height: 110px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.40);
+  /* transition: background-color 0.1s ease-in-out; */
+}
+
+#main-menu ul li a:hover {
+  background-color: rgba(0, 0, 0, 1.00);
+}
+
+#main-menu ul li a .fa {
+  display: table;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 52px;
+  text-align: center;
+}
+
+#main-menu ul li a img {
+  display: table;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#main-menu ul li a span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* end of revised menu */
 
 #search-wrap {
   width: 100%;
@@ -168,6 +241,12 @@ p {
 #header .text1b {
   color: #fff200;
   font-weight: bold;
+}
+
+#container {
+  background-image: url(../images/container-bg-left.png), url(../images/container-bg-right.png);
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
 }
 
 #footer {

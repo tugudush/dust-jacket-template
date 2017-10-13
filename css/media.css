@@ -1,7 +1,12 @@
 /** tablet portrait and above **/
-@media (min-width: 768px) {    
-  .wrap {
-    
+@media (min-width: 768px) {      
+  
+  #main-menu ul li {
+    margin-left: 10px;
+  }
+
+  #main-menu ul li:first-child {
+    margin-left: 0;
   }
   
   #footer-credits {
@@ -22,20 +27,20 @@
 /** desktop **/
 @media (min-width: 1200px) {
   .wrap {
-    max-width: 1200px;
+    max-width: 960px;
   }
 } /* end of @media (min-width: 1200px) */
 
 @media (min-width: 1600px) {
   .wrap {
-    max-width: 1600px;
+    max-width: 1200px;
   }
 } /* end of @media (min-width: 1200px) */
 
 /** tablet landscape and lower **/
 @media (max-width: 1024px) {
   .wrap {
-    max-width: 960px;
+    max-width: 768px;
   }  
   
   #header .text1,
@@ -45,7 +50,7 @@
 } /* end of @media (max-width: 1024px) */
 
 /** tablet portrait and lower **/
-@media (max-width: 768px) {    
+@media (max-width: 768px) {
   .wrap {
     max-width: initial;
     padding: 0 20px;
@@ -57,6 +62,10 @@
   
   #main-nav li a {
     color: #333333;
+  }
+  
+  #container {
+    background-image: initial;
   }
   
 } /* end of @media (max-width: 768px) */
@@ -77,7 +86,30 @@
   #top-bar .quick-links a {
     padding: 0 5px;
     border-left: 1px solid #ffffff;
-  }  
+  } 
+  
+  #main-menu {
+    margin-top: 20px;
+  }
+
+  #main-menu ul {
+    margin: 0;
+    width: 100%;
+  }
+
+  #main-menu ul li {
+    width: 32%;
+    margin-left: 2%;
+    margin-top: 6px;
+  }
+
+  #main-menu ul li:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  #main-menu ul li a {
+    width: 100%;
+  }
 } /* end of @media (max-width: 767px) */
 
 @media (max-width: 767px) and (orientation: portrait) {    
